@@ -1,5 +1,193 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-.contenedor-presentacion{
+@import url(reset.css);
+
+body{
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right, #333399, #ff00cc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carta-presentacion{
+    width: 450px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.carta-presentacion::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+
+.logo-carta-presentacion{
+    margin-bottom: 2rem;
+}
+
+.logo-carta-presentacion img{
+    width: 60px;
+}
+
+.logo-carta-presentacion,
+.carta-presentacion-header,
+.carta-presentacion-footer {
+    text-align: center;
+}
+
+.carta-presentacion a {
+    text-decoration: none;
+    color: #35339a;
+}
+
+.carta-presentacion a:hover{
+    text-decoration: underline;
+}
+
+.carta-presentacion-header{
+    margin-bottom: 2rem;
+}
+
+.carta-presentacion-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.carta-presentacion-header h1 + div {
+    font-size: calc(1rem * .8);
+    opacity: .8;
+}
+
+.carta-presentacion-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.carta-presentacion-formulario .item-formulario {
+    position: relative;
+}
+
+.carta-presentacion-formulario .item-formulario .icono-item-formulario{
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.carta-presentacion-formulario .caja {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.carta-presentacion-formulario .otro-item-formulario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+
+.carta-presentacion-footer{
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+}
+
+.carta-presentacion input[type="text"],
+.carta-presentacion input[type="password"],
+.carta-presentacion input[type="email"] {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.carta-presentacion input:focus{
+    background: white;
+}
+
+.carta-presentacion input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: black;
+}
+
+.carta-presentacion-formulario button {
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5rem;
+}
+
+.carta-presentacion-formulario button:hover {
+    background-color: rgba(0, 0, 0, .85);
+    cursor: pointer;
+}
+
+.carta-presentacion-redes{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.carta-presentacion-redes > div {
+    opacity: .8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(1rem * .8);
+}
+
+.carta-presentacion-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.carta-presentacion-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 100px;
+    transition: all .5s;
+}
+
+.carta-presentacion-social a:hover {
+    background: white;
+    transform: scale(1.2);
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+    body {
+        padding: 2rem 0;
+    }
+    .carta-presentacion{
+        width: 300px;
+        padding: 2rem;
+    }
 }
