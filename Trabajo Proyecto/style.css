@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -50,5 +52,22 @@
   }
 
   .carta-presentacion {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .colorcito{
+    color: goldenrod;
+  }
+
+  .colorAracnido{
+    color:goldenrod;
+    
+  }
+
+  .carousel-item{
+    height: 600px;
+  }
+
+  .carousel-inner{
     font-family: 'Poppins', sans-serif;
   }
