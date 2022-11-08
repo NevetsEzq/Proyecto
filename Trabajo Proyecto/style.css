@@ -1,4 +1,262 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*MENU*/
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+ 
+}
+
+/*Animacion que pasa cuando tocar por ejemplo popular y baja en la pagina*/
+html{
+  scroll-behavior: smooth;
+}
+
+/*Cambia el color de lo de abajo del carousel*/
+body{
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color:#fff;
+}
+/*Cambia el color de todo el menu*/
+header{
+  position: fixed;
+  top:0; left:0; right:0;
+  background: linear-gradient(to right, #06060a, #30292ecb);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  padding: 0px 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  
+}
+/*Modifica la palabra Inicio de la izquierda*/
+header .logo{
+  font-weight: bolder;
+  font-size: 25px;
+  color:#fff;
+  text-decoration: none;
+  
+}
+
+header .navbar ul{
+  list-style: none;
+}
+
+header .navbar ul li{
+  position: relative;
+  float: left;
+}
+/*Cambia el color de los MENUS ah, menos inicio*/
+header .navbar ul li a{
+  font-size: 20px;
+  padding: 9px;
+  color:#fff;
+  display: block;
+  text-decoration: none;
+  align-items: center;
+  margin-top: 10px;
+}
+/*Esto es el color que se pone en las letras al pasarles por arriba*/
+header .navbar ul li a:hover{
+  background: #333;
+  color: #fff;
+  text-decoration:underline;
+}
+/*Color del menu desplegable de categorias*/
+header .navbar ul li ul{
+  position: absolute;
+  padding-left: 0%;
+  left: 0px;
+  width: 200px;
+  background: linear-gradient(to right, #5f5f61, #f0edefcb);
+  display: none;
+}
+
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+header .navbar ul li ul li ul{
+  left: 200px;
+  top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+  display: initial;
+}
+
+#menu-bar{
+  display: none;
+}
+
+header label{
+  font-size: 20px;
+  color:#fff;
+  cursor: pointer;
+  display: none;
+}
+
+/*Lo que va aca a dentro es lo responsive*/
+@media(max-width: 991px){
+  header{
+    padding: 10px;
+  }
+
+  header label{
+    display: initial;
+  }
+  /*Es el color que se le pone al fondo de popular, categoria y al iniciar sesion cuando se achica la pantalla y se toca menú*/
+  header .navbar{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: linear-gradient(to right, #06060a, #30292ecb);
+    border-top: 1px solid #0000001a;
+    display: none;
+  }
+
+  header .navbar ul li{
+    width: 100%;
+  }
+
+  header .navbar ul li ul{
+    position: relative;
+    width: 100%;
+  }
+
+  header .navbar ul li ul li{
+    background: linear-gradient(to right, #5f5f61, #f0edefcb);/**/
+  }
+
+  header .navbar ul li ul li ul{
+    width: 100%;
+    left: 0;
+  }
+
+  #menu-bar:checked ~ .navbar{
+    display: initial;
+  }
+}
+/**/
+/*CAROUSEL DE PELICULAS*/
+.carousel-peliculas{
+  position: relative;
+  margin-top: 0vh;
+  background: linear-gradient(to bottom, #000000, #141414);
+  color: #fff;
+}
+
+.pelis__section h1{
+  margin-left: 50px;
+}
+
+.pelis__section__carousel{
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 40px 0;
+  scrollbar-width: none;
+  margin-top: 24px;
+  
+}
+
+.pelis__section__carousel::-webkit-scrollbar{
+  
+  display: none;
+}
+
+.pelis__section__carousel__card{
+   margin-left: 8px;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+   transition: transform 150ms ease-in;
+   
+}
+
+.pelis__section__carousel__card:first-child{
+  margin-left: 48px;
+}
+
+.pelis__section__carousel__card > img{
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.pelis__section__carousel__card > .carousel__card__text{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #141414b3;
+  display: none;
+}
+
+.pelis__section__carousel__card > .carousel__card__text > p{
+  padding-left: 24px;
+}
+
+.pelis__section__carousel__card:hover{
+  transform: scale(1.4);
+  z-index: 10;
+}
+
+.pelis__section__carousel__card:hover > .carousel__card__text{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+/**/
+
+/*Footer*/
+
+footer{
+  padding: 32px 48px;
+  background: linear-gradient(to bottom, #0000001a, #7e7e7e);
+}
+
+footer > * {
+  margin-top: 32px;
+}
+
+footer > *:first-child {
+  margin-top: 0;
+}
+
+footer > .footer__socialmedia > *:not(:first-child){
+  margin-left: 12px;
+}
+
+footer > .footer__info > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer > .footer__info > ul > li {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 8px 0;
+  flex: 1 0 25%;
+  color: black;
+}
+
+footer > .footer__copyright{
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(41, 39, 39);
+}
+
+/**/
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -33,6 +291,7 @@
     fill: currentColor;
   }
 
+  <!---->
   .nav-scroller {
     position: relative;
     z-index: 2;
@@ -40,11 +299,12 @@
     overflow-y: hidden;
   }
 
-  .nav-scroller .nav {
+  <!---->
+  .nav-scroller .nav { 
     display: flex;
     flex-wrap: nowrap;
     padding-bottom: 1rem;
-    margin-top: -1px;
+    margin-top: 0px;
     overflow-x: auto;
     text-align: center;
     white-space: nowrap;
@@ -65,7 +325,7 @@
   }
 
   .carousel-item{
-    height: 600px;
+    height: 617px;
   }
 
   .carousel-inner{

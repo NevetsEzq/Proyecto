@@ -10,6 +10,33 @@
         <title>Cartelera</title>
     </head>
     <body>
+      <!---->
+      <header>
+
+        <a href="#" class="logo">Inicio</a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="#populares">Popular</a></li>
+            <li><a href="#">Categorias</a>
+              <ul>
+                <li><a href="#principales">Principales</a></li>
+                <li><a href="#accion/aventura">Acción/Aventura</a></li>
+                <li><a href="#animacion">Animación</a></li>
+                <li><a href="#comedia">Comedia</a></li>
+                <li><a href="#infantil">Infantil</a></li>
+              </ul>
+            </li>  
+            <li><a href="presentacion.html">Iniciar sesión</a></li>          
+          </ul>
+        </nav>
+
+      </header>
+
+      <!--
         <header>
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
               <div class="container-fluid">
@@ -37,9 +64,10 @@
               </div>
             </nav>
         </header>
+      -->
         <main>
             
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" style= "background: black">
                 <div class="pantalla"></div>
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -47,7 +75,7 @@
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class="carousel-item active" >
                     
                     <img src="img/bestia.jpg" class="d-block w-100" alt="...">
                     <div class="container">
@@ -100,10 +128,336 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-              <div class="contenedor-cartelera">
-                <h1>Peliculas</h1>
-              </div>
         </main>
-        
+      <!--Acá empezó mi carousel de pelis xd-->
+        <div class="carousel-peliculas">
+          <div class="pelis__section" id="populares"> 
+            <h1>Populares</h1>
+            <div class="pelis__section__carousel">
+              <div class="pelis__section__carousel__card">
+                <img src="img/jack.jpg" alt="El extraño mundo de Jack">
+                <div class="carousel__card__text">
+                  <p>El extraño mundo de Jack</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cocosi.jpg" alt="Coco">
+                <div class="carousel__card__text">
+                  <p>Coco</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/aladdin.jpg" alt="Aladdin">
+                <div class="carousel__card__text">
+                  <p>Aladdin</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/antman.jpg" alt="Ant-Man">
+                <div class="carousel__card__text">
+                  <p>Ant-Man</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cars.jpg" alt="Cars">
+                <div class="carousel__card__text">
+                  <p>Cars</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/frozen.jpg" alt="Frozen">
+                <div class="carousel__card__text">
+                  <p>Frozen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Segundo Carousel-->
+          <div class="pelis__section" id="principales"> 
+            <h1>Principales</h1>
+            <div class="pelis__section__carousel">
+              <div class="pelis__section__carousel__card">
+                <img src="img/jack.jpg" alt="El extraño mundo de Jack">
+                <div class="carousel__card__text">
+                  <p>El extraño mundo de Jack</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cocosi.jpg" alt="Coco">
+                <div class="carousel__card__text">
+                  <p>Coco</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/aladdin.jpg" alt="Aladdin">
+                <div class="carousel__card__text">
+                  <p>Aladdin</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/antman.jpg" alt="Ant-Man">
+                <div class="carousel__card__text">
+                  <p>Ant-Man</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cars.jpg" alt="Cars">
+                <div class="carousel__card__text">
+                  <p>Cars</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/frozen.jpg" alt="Frozen">
+                <div class="carousel__card__text">
+                  <p>Frozen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Tercer carousel-->
+          <div class="pelis__section" id="accion/aventura"> 
+            <h1>Acción / Aventura</h1>
+            <div class="pelis__section__carousel">
+              <div class="pelis__section__carousel__card">
+                <img src="img/jack.jpg" alt="El extraño mundo de Jack">
+                <div class="carousel__card__text">
+                  <p>El extraño mundo de Jack</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cocosi.jpg" alt="Coco">
+                <div class="carousel__card__text">
+                  <p>Coco</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/aladdin.jpg" alt="Aladdin">
+                <div class="carousel__card__text">
+                  <p>Aladdin</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/antman.jpg" alt="Ant-Man">
+                <div class="carousel__card__text">
+                  <p>Ant-Man</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cars.jpg" alt="Cars">
+                <div class="carousel__card__text">
+                  <p>Cars</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/frozen.jpg" alt="Frozen">
+                <div class="carousel__card__text">
+                  <p>Frozen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Cuarto carousel-->
+          <div class="pelis__section" id="animacion"> 
+            <h1>Animación</h1>
+            <div class="pelis__section__carousel">
+              <div class="pelis__section__carousel__card">
+                <img src="img/jack.jpg" alt="El extraño mundo de Jack">
+                <div class="carousel__card__text">
+                  <p>El extraño mundo de Jack</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cocosi.jpg" alt="Coco">
+                <div class="carousel__card__text">
+                  <p>Coco</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/aladdin.jpg" alt="Aladdin">
+                <div class="carousel__card__text">
+                  <p>Aladdin</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/antman.jpg" alt="Ant-Man">
+                <div class="carousel__card__text">
+                  <p>Ant-Man</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cars.jpg" alt="Cars">
+                <div class="carousel__card__text">
+                  <p>Cars</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/frozen.jpg" alt="Frozen">
+                <div class="carousel__card__text">
+                  <p>Frozen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Quinto carousel-->
+          <div class="pelis__section" id="populares"> 
+            <h1>Populares</h1>
+            <div class="pelis__section__carousel">
+              <div class="pelis__section__carousel__card">
+                <img src="img/jack.jpg" alt="El extraño mundo de Jack">
+                <div class="carousel__card__text">
+                  <p>El extraño mundo de Jack</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cocosi.jpg" alt="Coco">
+                <div class="carousel__card__text">
+                  <p>Coco</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/aladdin.jpg" alt="Aladdin">
+                <div class="carousel__card__text">
+                  <p>Aladdin</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/antman.jpg" alt="Ant-Man">
+                <div class="carousel__card__text">
+                  <p>Ant-Man</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cars.jpg" alt="Cars">
+                <div class="carousel__card__text">
+                  <p>Cars</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/frozen.jpg" alt="Frozen">
+                <div class="carousel__card__text">
+                  <p>Frozen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Sexto carousel-->
+          <div class="pelis__section" id="comedia"> 
+            <h1>Comedia</h1>
+            <div class="pelis__section__carousel">
+              <div class="pelis__section__carousel__card">
+                <img src="img/jack.jpg" alt="El extraño mundo de Jack">
+                <div class="carousel__card__text">
+                  <p>El extraño mundo de Jack</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cocosi.jpg" alt="Coco">
+                <div class="carousel__card__text">
+                  <p>Coco</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/aladdin.jpg" alt="Aladdin">
+                <div class="carousel__card__text">
+                  <p>Aladdin</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/antman.jpg" alt="Ant-Man">
+                <div class="carousel__card__text">
+                  <p>Ant-Man</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cars.jpg" alt="Cars">
+                <div class="carousel__card__text">
+                  <p>Cars</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/frozen.jpg" alt="Frozen">
+                <div class="carousel__card__text">
+                  <p>Frozen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Septimo y ultimo carousel ah-->
+          <div class="pelis__section" id="infantil"> 
+            <h1>Infantil</h1>
+            <div class="pelis__section__carousel">
+              <div class="pelis__section__carousel__card">
+                <img src="img/jack.jpg" alt="El extraño mundo de Jack">
+                <div class="carousel__card__text">
+                  <p>El extraño mundo de Jack</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cocosi.jpg" alt="Coco">
+                <div class="carousel__card__text">
+                  <p>Coco</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/aladdin.jpg" alt="Aladdin">
+                <div class="carousel__card__text">
+                  <p>Aladdin</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/antman.jpg" alt="Ant-Man">
+                <div class="carousel__card__text">
+                  <p>Ant-Man</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/cars.jpg" alt="Cars">
+                <div class="carousel__card__text">
+                  <p>Cars</p>
+                </div>
+              </div>
+              <div class="pelis__section__carousel__card">
+                <img src="img/frozen.jpg" alt="Frozen">
+                <div class="carousel__card__text">
+                  <p>Frozen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <div class="footer__socialmedia">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png" alt="icon facebook" class="icons8__icon">
+            <img src="https://img.icons8.com/ios-filled/50/000000/instagram.png" alt="icon instagram" class="icons8__icon">
+            <img src="https://img.icons8.com/android/24/000000/twitter.png" alt="icon twitter" class="icons8__icon">
+            <img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png" alt="icon youtube" class="icons8__icon">
+          </div>
+          <div class="footer__info">
+            <ul>
+              <li>Audio y subtitulos</li>
+              <li>Descripción de audio</li>
+              <li>Centro de ayuda</li>
+              <li>Términos de uso</li>
+              <li>Privacidad</li>
+              <li>Avisos legales</li>
+              <li>Preferencia de cookies</li>
+              <li>Información corporativa</li>
+              <li>Contáctenos</li>
+            </ul>
+          </div>
+          <div class="footer__copyright">
+            <p>© 2004-2022 Aniven Industries, Inc.</p>
+          </div>
+        </footer>
+        <!--ata aqui llega-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </body>
 </html>
