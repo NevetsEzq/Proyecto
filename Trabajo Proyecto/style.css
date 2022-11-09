@@ -9,6 +9,16 @@
  
 }
 
+.btn{
+  display: flex;
+  justify-content: center;
+}
+
+.video {
+  padding-top: 90px;
+  height: 100%;
+  width: 100%;
+}
 
 /*Animacion que pasa cuando tocar por ejemplo popular y baja en la pagina*/
 html{
