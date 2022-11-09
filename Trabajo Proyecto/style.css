@@ -9,6 +9,7 @@
  
 }
 
+
 /*Animacion que pasa cuando tocar por ejemplo popular y baja en la pagina*/
 html{
   scroll-behavior: smooth;
@@ -17,7 +18,7 @@ html{
 /*Cambia el color de lo de abajo del carousel*/
 body{
   min-height: 100vh;
-  background-color:#fff;
+  background-color:rgb(0, 0, 0);
 }
 /*Cambia el color de todo el menu*/
 header{
@@ -151,6 +152,7 @@ header label{
 }
 
 .pelis__section h1{
+  margin-top: 20px;
   margin-left: 50px;
 }
 
@@ -190,7 +192,7 @@ header label{
 .pelis__section__carousel__card > .carousel__card__text{
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 300px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   display:none;
@@ -217,7 +219,7 @@ header label{
 
 footer{
   padding: 32px 48px;
-  background: linear-gradient(to bottom, #0000001a, #7e7e7e);
+  background: linear-gradient(to top, #0000001a, #7e7e7e);
 }
 
 footer > * {
@@ -250,7 +252,7 @@ footer > .footer__info > ul > li {
 footer > .footer__copyright{
   font-size: 12px;
   font-weight: normal;
-  color: rgb(41, 39, 39);
+  color: rgb(100, 98, 98);
 }
 
 /**/
@@ -328,3 +330,5 @@ footer > .footer__copyright{
   .carousel-inner{
     font-family: 'Poppins', sans-serif;
   }
+
+  
